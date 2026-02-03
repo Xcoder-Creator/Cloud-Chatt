@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Michael Alfred Afia">
+	<meta name="description" content="Cloud-chatt is an online social media platform which connects different people from different backgrounds and ways of life across the world as a single national family.">
+	<meta name="keywords" content="Cloud-chatt is an online social media platform which connects different people from different backgrounds and ways of life across the world as a single national family.">
+    <title>Cloud-Chatt | HomePage</title>
+	<link href="css/Cloud-Chatt.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+	<link href="images/Cloud Chatt Logo.png" rel="shortcut icon">
+  </head>
+  <body style="background-color: #f9f9f9;">
+    <main>
+	  <article>
+	    <section class="body-content">
+		  <div class="container cover-body">
+		    <div class="row wrap-body">
+			  <div class="col-lg-6 phone-pack">
+			    <div class="pack">
+			      <img src="images/phone-1.png" id="phone" alt="phone">
+				  <img src="images/component.png" id="comp" alt="phone">
+				</div>  
+			  </div>
+			  <div class="col-lg-6 log-pack">
+			    <form method="get" action="">
+			      <div class="login-center">
+				    <h1 id="logo-login"><i class="fa fa-cloud"></i> Cloud-Chatt</h1>
+					<input id="log-text" type="text" name="user_info" placeholder="Phone number, username, or email">
+					<input id="log-pass" type="password" name="password" placeholder="Password">
+					<p style="margin-bottom: 0px; margin-top: 7px;">
+					  <input id="toggle-pass" style="position: relative; top: 2px; right: 3px;" type="checkbox"> Show Password
+					</p>
+					<input id="log-butt" type="button" value="Log In">
+					<div id="error-msg" style="display: none; color: red; padding-top: 16px;">The username or the password that is used is not correct.</div>
+					<hr id="dim-rule">
+					<p id="txt-or">OR</p>
+					<hr id="dim-rule-2">
+					<a href="#" id="log-lnk-fb"><img src="images/FB.png" id="fb-log-ico"> Log in with Facebook</a>
+					<a href="#" id="fgt-pass">Forgot password?</a>
+				  </div>
+				</form>  
+				<div class="sign-log">
+				  <span id="acc-log">Don't have an account?</span>
+				  <a href="#" id="sign-up">Sign up</a>
+				</div>
+				<p id="gta">Get the app.</p>
+				<div class="store-icons">
+				  <a href="#" id="store-ico-1"><img id="app-store" src="images/app-store.png"></a>
+				  <a href="#" id="store-ico-2"><img id="play-store" src="images/play-store.png"></a>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</section>
+	  </article>
+	</main>
+	<footer>
+	  <div class="site-foot">
+	    <div class="foot-lnk">
+		  <a href="#" id="foot-lnk-star">ABOUT</a>
+		  <a href="#" id="foot-lnk-act">HELP</a>
+		  <a href="#" id="foot-lnk-act">PRESS</a>
+		  <a href="#" id="foot-lnk-act">API</a>
+		  <a href="#" id="foot-lnk-act">JOBS</a>
+		  <a href="#" id="foot-lnk-act">PRIVACY</a>
+		  <a href="#" id="foot-lnk-act">TERMS</a>
+		  <a href="#" id="foot-lnk-act">LOCATION</a>
+		  <a href="#" id="foot-lnk-act">LANGUAGE</a>
+		</div>
+		<div class="foot-cpyright">
+		  Copyright © <span id="year"></span> Cloud-Chatt, All Rights Reserved.
+		</div>
+	  </div>
+	</footer>
+	
+	<script>
+	  var year = new Date();
+	  document.getElementById("year").innerHTML = year.getFullYear();
+	  document.getElementById("toggle-pass").onclick = toggle;
+	  function toggle(){
+	    var passTog = document.getElementById("log-pass");
+	    if (passTog.type === "password"){
+	      passTog.type = "text";
+	    } else {
+	      passTog.type = "password";
+	    }
+	  }	
+	  
+	  document.getElementById("log-butt").onclick = myFunc;
+	  function myFunc(){
+	    var userName = document.getElementById("log-text").value;
+		var pass = document.getElementById("log-pass").value;
+		if ((userName == "tripleex9ine" || userName == "08156747986" || userName == "alfredmichael819@gmail.com") && pass == "alfred2001"){
+		  window.location.href = "Cloud-Chatt index.html";
+		} else if (userName == "tripleex9ine" || userName == "08156747986" || userName == "alfredmichael819@gmail.com" && pass != "alfred2001"){
+		   document.getElementById("error-msg").style.display = "block";
+		} else if (userName != "tripleex9ine" || userName != "08156747986" || userName != "alfredmichael819@gmail.com" && pass == "alfred2001"){
+		   document.getElementById("error-msg").style.display = "block";
+		} else if (userName != "tripleex9ine" || userName != "08156747986" || userName != "alfredmichael819@gmail.com" && pass != "alfred2001"){
+		   document.getElementById("error-msg").style.display = "block";
+		}
+	  }
+	</script>
+  </body>
+</html>
