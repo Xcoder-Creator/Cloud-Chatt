@@ -30,3 +30,15 @@ Cloud Chatt is a frontend social media project I built in 2022 during my early d
 2. Open `index.html` in your browser
 
 No build step required.
+
+## Project Status
+This project is no longer actively maintained. It exists as an archive of my frontend work from 2022.
+
+## What I’d Do Differently Today
+- Replace jQuery with modern JavaScript or a framework like React
+- Use CSS Grid and Flexbox more extensively
+- Improve accessibility (ARIA, keyboard navigation)
+- Optimize assets and performance
+
+## License
+This project is for educational and demonstration purposes.
