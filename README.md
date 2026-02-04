@@ -39,6 +39,7 @@ This project is no longer actively maintained. It exists as an archive of my fro
 - Use CSS Grid and Flexbox more extensively
 - Improve accessibility (ARIA, keyboard navigation)
 - Optimize assets and performance
+- Refine the user interface with better color schemes and design themes
 
 ## License
 This project is for educational and demonstration purposes.
